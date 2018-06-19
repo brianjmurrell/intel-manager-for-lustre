@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       agent {
-        node {
-          label 'el7'
+        docker {
+          image 'centos7'
         }
 
       }
